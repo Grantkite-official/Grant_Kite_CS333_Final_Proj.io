@@ -21,6 +21,7 @@ if __name__ == "__main__":
     game.run()
 
 
+
 class Gamecalc:
     
     def __init__(self):
