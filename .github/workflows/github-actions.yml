@@ -22,6 +22,7 @@ jobs:
       - name: Test with unittest
         run: |
           python -m unittest testSuite.py
+          coverage run
       - name: Run Python script
         run: |
           cmd.exe /c start cmd.exe /k "python main.py && pause"
