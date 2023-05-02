@@ -23,5 +23,5 @@ jobs:
         run: |
           python -m unittest testSuite.py
       - name: Run Python script
-        run: python main.py
-
+        run: |
+          python -c "import pty; pty.spawn(['python', 'main.py'])"
