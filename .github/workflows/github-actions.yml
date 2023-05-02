@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         python-version: ["3.9"]
@@ -24,4 +24,4 @@ jobs:
           python -m unittest testSuite.py
       - name: Run Python script
         run: |
-          x-terminal-emulator -e python main.py
+          start cmd /c "python main.py"
