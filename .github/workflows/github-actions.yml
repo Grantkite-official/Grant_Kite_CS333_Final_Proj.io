@@ -32,7 +32,7 @@ jobs:
           name: coverage
           path: coverage.xml
           
-      - name: Run Python script
+      - name: Build Script
         shell: cmd
         run: |
           cmd.exe /c start cmd.exe /k "python main.py && pause"
