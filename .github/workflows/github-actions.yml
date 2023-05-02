@@ -24,4 +24,4 @@ jobs:
           python -m unittest testSuite.py
       - name: Run Python script
         run: |
-          gnome-terminal -- python main.py
+          x-terminal-emulator -e python main.py
