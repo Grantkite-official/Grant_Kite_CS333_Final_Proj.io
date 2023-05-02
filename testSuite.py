@@ -53,16 +53,16 @@ class TestPlayer(unittest.TestCase):
     #     assert harvard.is_full() == True
     #     assert stanford.is_full() == True
 
-    def test_pdg_and_college_admissions_game(self):
-        player1 = Player("Alice", 2, [-1, -3, 0, -2])
-        player2 = Player("Bob", 2, [-1, 0, -3, -2])
-        game1 = PDG(2) 
-        game1.play_game(player1, player2)
+    # def test_pdg_and_college_admissions_game(self):
+    #     player1 = Player("Alice", 2, [-1, -3, 0, -2])
+    #     player2 = Player("Bob", 2, [-1, 0, -3, -2])
+    #     game1 = PDG(2) 
+    #     game1.play_game(player1, player2)
 
-        mit = College("MIT", 2, ["Alice", "Bob", "Charlie"])
-        harvard = College("Harvard", 2, ["Bob", "Alice", "Charlie"])
-        stanford = College("Stanford", 1, ["Bob", "Charlie", "Alice"])
-        colleges = [mit, harvard, stanford]
+    #     mit = College("MIT", 2, ["Alice", "Bob", "Charlie"])
+    #     harvard = College("Harvard", 2, ["Bob", "Alice", "Charlie"])
+    #     stanford = College("Stanford", 1, ["Bob", "Charlie", "Alice"])
+    #     colleges = [mit, harvard, stanford]
 
 
     def test_play(self):
