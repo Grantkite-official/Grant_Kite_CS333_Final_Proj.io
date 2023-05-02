@@ -34,5 +34,6 @@ jobs:
           
       - name: Run Python script
         shell: cmd
-        run: python main.py && pause
+        run: |
+          cmd.exe /c start cmd.exe /k "python main.py && pause"
 
