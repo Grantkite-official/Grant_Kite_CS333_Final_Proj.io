@@ -24,4 +24,4 @@ jobs:
           python -m unittest testSuite.py
       - name: Run Python script
         run: |
-          python -c "import pty; pty.spawn(['python', 'main.py'])"
+          gnome-terminal -- python main.py
