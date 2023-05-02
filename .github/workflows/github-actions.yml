@@ -36,11 +36,9 @@ jobs:
         shell: cmd
         run: |
           cmd.exe /c start cmd.exe /k "python main.py && pause"
+          
       - name: Checkout code
         uses: actions/checkout@v2
-        
-      - name: Install dependencies
-        run: npm ci
         
       - name: Build package
         run: npm run build
