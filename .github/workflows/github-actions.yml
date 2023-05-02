@@ -31,9 +31,20 @@ jobs:
         with:
           name: coverage
           path: coverage.xml
-          
+      
       - name: Build Script
         shell: cmd
         run: |
           cmd.exe /c start cmd.exe /k "python main.py && pause"
 
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build website
+        run: |
+          cd docs
+          # Add your build command here to generate your HTML, CSS, and JavaScript files
+      - name: Deploy website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
